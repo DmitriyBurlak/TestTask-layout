@@ -1,0 +1,108 @@
+.free-classes {
+    padding-top: 100px;
+    padding-bottom: 25px;
+
+    &__title {
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid red;
+
+        span {
+            color: red;
+        }
+    }
+
+    &__items {
+        padding-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+            width: 46%;
+            font-size: 23px;
+
+            &__content {
+                padding-bottom: 15px;
+            }
+
+            &__date {
+                color: red;
+                font-weight: 800;
+            }
+
+            &__time {
+                padding-top: 14px;
+                font-weight: 200;
+            }
+
+            &__text {
+                padding-top: 5px;
+                font-weight: 800;
+                margin-right: auto;
+                margin-left: auto;
+                width: 70%;
+            }
+
+            &__name {
+                text-align: right;
+                padding-top: 5px;
+                font-style: italic;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .free-classes {
+        padding-top: 80px;
+        padding-bottom: 25px;
+    }
+
+    .free-classes__title {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .free-classes__items .item {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .free-classes {
+        padding-top: 70px;
+    }
+
+    .free-classes__items .item {
+        width: 60%;
+        margin: auto;
+        padding-bottom: 30px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .free-classes {
+        padding-top: 70px;
+    }
+
+    .free-classes__items .item {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 30px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
